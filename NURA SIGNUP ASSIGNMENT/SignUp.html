@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Signup Form</title>
+
+<style>
+	div.container{
+		background-color: darkcyan;
+		height: 70%;
+		width: 50%;
+		padding: 2%;
+		margin: 0%;
+		float: center;
+		
+
+	}
+
+	input{
+		padding: 10px;
+		padding-right: 30px;
+		float: center;
+		width: 50%;
+
+	}
+	select{
+		background-color: darkcyan;
+		padding: 5px;
+		padding-right: 30px;
+		float: center;
+		width: 20%;
+		border-radius: 5%;
+
+	}
+	
+	.submit{
+		background-color: darkcyan;
+		padding: 5px;
+		padding-right: 30px;
+		float: center;
+		width: 20%;
+		border-radius: 5%;
+
+	}
+	
+</style>
+
+</head>
+
+<body bgcolor="bluegray">
+	<center>
+<div class="container">
+	<form action="" name="SignupForm" onsubmit="processingform()" id="SignupForm" enctype="application/-www-force-urlencoded">
+	<img src="aa.png">
+	<label style=" color: white;"> <h1>STUDENT REGISTRATION FORM</h1></label>
+	<p></p>
+	<h2><font color="black">STUDENT INFORMATION</font></h2> 
+	<input type="text" name="First_name" id="first_name" placeholder="Enter your First Name" required>
+<br><br>
+	<input type="text" name="Miidle_name" id="Middle_name" placeholder="Enter your Middle Name" required>
+<br><br>
+	<input type="text" name="Last_name" id="Last_name" placeholder="Enter your Last Name" required>
+<br><br>
+
+	<input type="Date" name="Date of Birth" id="Date_Birth" placeholder="Enter your Date of Birth" required>
+<br><br>
+	<input type="text" name="Student_ID" id="Student_ID" placeholder="Enter Student ID" required>
+	<br><br>
+<label><h3>ADDRESS</h3></label>
+	<input type="text" name="Address" id="Address" placeholder="Address" required>
+<br><br>
+	<input type="text" name="City" id="City" placeholder="Enter your City" required>
+<br><br>
+	<input type="text" name="State" id="State" placeholder="Enter your State" required>
+	<br><br>
+
+	<input type="text" name="Country " id="Country" placeholder="Enter your Country" required>
+<br><br>
+	<input type="text" name="Zip_Code" id="Zip_code" placeholder="Enter your Country Zip Code" required>
+	<br><br>
+<label><h3>CONTACT ADDRESS</h3></label>
+
+	<input type="email" name="email" id="email" placeholder="Enter your Email" required>
+<br><br>
+<input type="password" name="password" id="Password" placeholder="Enter your password" required>
+	<br><br>
+	<input type="password" name="C_password" id="C-Password" placeholder="Confirm your password" required>
+	<br><br>
+	<input type="number" name="Phone_no" id="Phone_no" placeholder="Enter your Phone No." required>
+	<br><br>
+
+	<select>
+		<option>
+			Course
+		</option>
+	</select>
+
+	<select required>
+		<option>
+			Level
+		</option>
+	</select>
+
+	<select>
+		<option>
+			Language
+		</option>
+	</select>
+
+	<select>
+		<option>
+			Start Date
+		</option>
+	</select>
+<br><br>
+<input type="textarea" name="Comment" id="Comment" placeholder="Comment" required>
+<br><br>
+
+<input type="submit" value="Signup" name="Signup"  style=" color:white; background-color: darkblue; cursor: pointer;">
+
+</center>
+</form>
+
+</div>
+<script >
+	function processingform(){
+
+first_name = document.getElementById('first_name').value
+ alert ("You have sucessfully Register" + "  " + first_name)
+	
+	}
+
+</script>
+</body>
+</html>
